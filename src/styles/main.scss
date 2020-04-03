@@ -6,6 +6,9 @@
 @import "base/general";
 @import "../blocks/modules";
 
+$light-color: #fff;
+$accent-color: #65e496;
+
 h1,
 h2,
 h3,
@@ -16,5 +19,38 @@ p {
 }
 body {
   font-family: "Roboto Slab", serif;
-  background-color: blue;
+}
+.page-main {
+  background-image: url(../img/bg-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $light-color;
+}
+.wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+  &__logo {
+    background-image: url(../img/Logo.svg);
+    display: block;
+    width: 137px;
+    height: 28px;
+  }
+  &-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    &__item {
+      margin-left: 15px;
+    }
+    &__item.active {
+      border-bottom: 3px solid $accent-color;
+    }
+  }
 }
