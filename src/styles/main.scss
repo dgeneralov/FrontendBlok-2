@@ -36,6 +36,7 @@ body {
   justify-content: space-between;
   max-width: 1170px;
   margin: 0 auto;
+  padding-top: 50px;
   &__logo {
     background-image: url(../img/Logo.svg);
     display: block;
@@ -43,6 +44,7 @@ body {
     height: 28px;
   }
   &-list {
+    font-family: ;
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
