@@ -48,16 +48,23 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
+    &__link {
+      text-decoration: none;
+      color: $light-color;
+      direction: color 2s;
+    }
+    &__link:hover {
+      color: $accent-color;
+    }
     &__item {
       line-height: 1.7;
       margin-left: 25px;
       font-family: "Open Sans", sans-serif;
       font-size: 16px;
-    }
-    &__item.active {
       border-bottom: 3px solid transparent;
-      border-radius: 2px;
+      direction: border-bottom 200s;
     }
+
     &__item:hover {
       border-bottom: 3px solid $accent-color;
       border-radius: 2px;
@@ -103,6 +110,10 @@ body {
     font-size: 18px;
     color: $light-color;
     padding-bottom: 30px;
+    &-top {
+      color: #696980;
+      padding-bottom: 5px;
+    }
   }
   &__discription {
     letter-spacing: 0.5px;
@@ -115,7 +126,6 @@ body {
     font-family: "Roboto Slab", serif;
     font-weight: 700;
     font-size: 48px;
-    padding-bottom: 39px;
 
     span {
       display: block;
@@ -145,5 +155,42 @@ body {
       font-weight: 400i;
       font-size: 12px;
     }
+  }
+}
+.block-author {
+  padding-top: 161px;
+  display: flex;
+  justify-content: space-between;
+}
+.block-ava {
+  position: relative;
+  &__png {
+    margin-top: 48px;
+    margin-right: 50px;
+  }
+  &__svg {
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+.block-counter {
+  padding-bottom: 161px;
+  padding-top: 160px;
+  display: flex;
+  justify-content: space-around;
+  p {
+    text-align: center;
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  span {
+    padding-bottom: 31px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 100;
+    font-size: 80px;
+    display: block;
+    color: $accent-color;
   }
 }
